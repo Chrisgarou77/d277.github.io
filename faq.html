@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michigan is the best state</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const confirmEmail = document.getElementById('confirm-email').value;
+            if (email !== confirmEmail) {
+                alert("Email doesnt match");
+            } else {
+                document.getElementById('info-form').submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+    <div class="header">
+        <a href="index.html">
+            <h3>Welcome to Michigan!</h3>
+        </a>
+        <div class="right">
+        <a href="lansing.html">Lansing</a>
+        <a href="detroit.html">Detroit</a>
+        <a href="grand_rapids.html">Grand Rapids</a>
+        <a href="faq.html">FAQ</a>
+        </div>
+    </div>
+     
+
+    <body>
+
+        <h2>Enter Your Information</h2>
+        <form id="info-form" action="/submit_form" method="post" onsubmit="validateForm(event)">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required>
+    
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required>
+    
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="confirm-email">Confirm Email Address</label>
+            <input type="email" id="confirm-email" name="confirm_email" required>
+    
+            <label for="question">Ask a Question</label>
+            <textarea id="question" name="question" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+    </body>
+    
+    <div class="middle-page">
+        <div class="middletitle">
+         <h2 class="imgheader">Other Cities in Michigan</h2> 
+        </div>
+        <div class="image-container">
+        <div class="img">
+        <a href="detroit.html">
+        <img src="detroit.jpg" alt="Detroit" width="200" height="150">
+        </a>
+            <p>Detroit</p>
+            </div>
+            <div class="img">
+            <a href="grand_rapids.html">
+                <img src="grand rapids.jpg" alt="Grand Rapids" width="200" height="150"> 
+            </a>
+            <p>Grand Rapids</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal">
+        <div class="list-container">
+            <div>
+                <h4>In my personal opinion I believe the rankings of best to worst city go:</h4>
+                <ol>
+                    <li>Detroit</li>
+                    <li>Grand Rapids</li>
+                    <li>Lansing</li>
+                </ol>
+            </div>
+
+            <div>
+                <h4>These are the best things to do in Detroit in my opinion:</h4>
+                <ul>
+                    <li>Fish</li>
+                    <li>Go to all the different sports games</li>
+                    <li>Go Shopping</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Ranking</th>
+            <th>Things to Do</th>
+        </tr>
+        <tr>
+            <td>Detroit</td>
+            <td>1</td>
+            <td>Go to the DIA, See a play at the Fox Theatre, Check out Motown Museum.</td>
+        </tr>
+        <tr>
+            <td>Grand Rapids</td>
+            <td>2</td>
+            <td>Go to Fredrik Meijer's Garden, Go to john ball Zoo, See the public museum.</td>
+        </tr>
+        <tr>
+            <td>Lansing</td>
+            <td>3</td>
+            <td>Visit the capital history, Go to Michigan State, and see potter park zoo.</td>
+        </tr>
+    </table>
+   
+        
+    <div class="quote-page">
+            <p>"Michigan is an amazing place to be educated, establish roots, work, live, and innovate because the people of the state make it so. We are the new hope we seek." 
+
+                -Michigan Council Member</p>
+    </div>    
+    
+    <div class="bottom-page">
+        <div class="bottom-container">
+        <h3>What are you waiting for? Book a roadtrip today!</h3>
+        <p></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Hope you visit!</p>
+    </div>
+</div>
+    
+
+            
+
+
+    
+</body>
+</html>
